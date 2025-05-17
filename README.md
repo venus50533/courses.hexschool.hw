@@ -5,13 +5,13 @@
 2.Github上面新增一個Repository(專案)
 3.打開gitbash
     <!-- 帳號 -->
-    $ git config --global user.name "venus50533"
+    $ git config --global user.name "使用者帳號"
     <!-- 信箱 -->
-    $ git config --global user.email "venus50533@gmail.com"
+    $ git config --global user.email "使用者郵件"
     <!-- 檢查設定 -->
     $ git config --list
     <!-- 複製專案 https://github.com/使用者帳號/儲存庫名稱.git -->
-    $ git clone https://github.com/venus50533/courses.hexschool.hw
+    $ git clone https://github.com/使用者帳號/儲存庫名稱.git
 
 
 
