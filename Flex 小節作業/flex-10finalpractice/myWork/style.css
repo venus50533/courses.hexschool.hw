@@ -1,0 +1,267 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* css reset 開始 */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*-- css reset 結束 ------*/
+
+/* 共用開始 */
+.wrap{
+    box-sizing: border-box;
+    margin: auto;
+    font-family:"微軟正黑體";
+}
+img{
+    vertical-align:bottom;
+}
+a{
+    text-decoration: none;
+}
+.w-50{
+    width: 50%;
+}
+li{
+    list-style-type:lower-roman;
+    /* list-style-position:inside; */
+    text-indent: 4px;
+    list-style:circle inside;
+}
+/* 共用結束 */
+
+/* connect開始 */
+.header{
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+}
+.header.connect{
+    background: #aaa2;
+    padding: 10px;
+    justify-content: flex-end;
+    gap: 10px;
+    font-size: 14px;
+}
+.header.connect .fb{
+    text-decoration: none;   
+    color: #4460A0;
+}
+.header.connect .twitter{
+    text-decoration: none;   
+    color: #00AAEC;
+}
+.fb img,.twitter img{
+    padding-right: 3px;
+}
+/* connect結束 */
+
+/* nav開始 */
+.header div.tab{
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+}
+.header div.tab a:hover{
+    border-bottom:3px solid #16D0A2;
+}
+.header div.tab a{
+    font-size: 18px;
+    padding: 10px 20px;
+    color: #16D0A2;
+    font-weight: 700;
+}
+/* nav結束 */
+
+/*banner開始*/
+.banner{
+    position: relative;
+}
+.banner img{
+    aspect-ratio: 3 / 1; 
+    width: 100%;
+    position: relative;
+}
+.banner .h2_bg{
+    position: absolute;
+    top: 20%;
+    right:0;
+    left: 1%;
+    bottom: 30%;
+    background: #1F1E1C;
+    opacity: 0.3;
+}
+.banner h2{
+    position: absolute;
+    top: 35%;
+    right:0;
+    left: 2%;
+    color: white;
+    font-size: 2em;
+}
+/*banner結束*/
+
+/*course開始*/
+.course.card{
+    margin-top: 20px;
+    display: flex;
+    justify-content:space-around;
+}
+.course_item{
+    box-sizing: border-box;
+    padding: 1%;
+    font-size: 12px;
+    text-align: justify;
+    line-height: 2;
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #aaa1;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+h3{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+/*course結束*/
+
+/*tbl開始*/
+table{
+    margin: 20px 0;
+    width: 100%;
+    font-weight: 600;
+}
+caption{
+    padding: 10px 0;
+    line-height: 1.5;
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+}
+tr.tbl_header{
+    font-size: 14px;
+    background-color: #aaa2;
+}
+tr{
+    border-top: 2px solid #aaa2;
+    border-bottom: 2px solid #aaa2;
+}
+th,td{
+    padding: 10px;
+    text-align: left;
+}
+tr .td_green{
+    color: #16D0A2;
+}
+/*tbl結束*/
+
+/*form開始*/
+.form{
+    box-sizing: border-box;
+    width: 100%;
+    background: linear-gradient(to top, #009671, #03684D);
+    color: #fff;
+}
+.form h3{
+    padding: 15px 0 10px;
+}
+.form_input{
+    display: flex;
+}
+.form_input .w-50{
+    display: flex;
+    justify-content: center;
+    padding: 10px 10px 20px;
+}
+.form_input .w-50.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 10px 10px 20px;
+    gap: 5px;
+}
+.form_input .w-50 .input_group{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 2px;
+}
+input[name="textArea"]{
+    width: 98%;
+    height: 13em;
+    border-radius: 3px;
+}
+form button{
+    color: white;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 2px 1px 1px 1px rgba(0, 0, 0, 0.1);
+    background: #16D0A2;
+    padding: 2px 1px;
+    width: 4em;
+    margin-left: auto;
+    margin-top: auto;
+}
+/*form結束*/
+
+/*footer開始*/
+.footer{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer_info{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 14px;
+}
+.footer span{
+    margin: 0 auto;
+    font-size: 14px;
+    color: red;
+}
+/*footer結束*/
