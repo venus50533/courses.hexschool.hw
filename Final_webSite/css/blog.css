@@ -7,9 +7,9 @@ img{
     vertical-align: bottom;
 }
 .container {
-    min-width: 375px; 
-    margin: auto;
+    width: fit-content;
     box-sizing: border-box;
+    margin: auto;
 }
 .header{
     display: flex;
@@ -92,7 +92,7 @@ img{
 }
 .row {
     box-sizing: border-box;
-    padding: 40px 10%;
+    padding: 40px 15%;
     gap: 24px;
     display: flex;
     flex-wrap: wrap;
