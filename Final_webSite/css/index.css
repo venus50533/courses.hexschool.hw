@@ -7,8 +7,14 @@ body{
     font-family: "Noto Sans TC", sans-serif;
     line-height: 1.5;
 }
+img{
+    vertical-align: bottom;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
 .container{
-    min-width: 375px; 
+    max-width: 1920px; 
 }
 .header{
     display: flex;
@@ -17,7 +23,6 @@ body{
     font-size: 28px;
     text-align: center;
 }
-
 .header_a{
     text-decoration:none;
     color: #000;
@@ -25,34 +30,49 @@ body{
 .header_a:first-child{
     margin-right: 40px;
 }
-img{
-    width: 100%;
+/* ---------------------- */
+.banner{
+    display: flex;
 }
-.introduce{
-    padding: 24px 24px 200px;
+.banner_img{
+    width: 50%;
+}
+.b_img{
+    aspect-ratio: 1.1510/1;
+}
+.img_b{
+    position: relative;
+}
+.banner_log{
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    position: absolute;
+    top: 35.9712%;
+    right: 20%;
+}
+.banner_log p{
     color: #0027D5;
-    background-image: url("./img/desktop/index/index_介紹背景.jpg");
-    background-size: contain;
-}
-
-.intro_name{
-    font-weight: 900;
-    font-size: 52px;
-}
-.intro_job{
-    font-weight: 700;
     font-size: 28px;
-    position: static;
+    font-weight: 700;
 }
+.banner_log p:first-of-type{
+    font-size: 120px;
+    font-weight: 900;
+    white-space:nowrap;
+}
+/* ---------------------- */
+
 .intro_text{
+    background-color: #fff;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: 80px;
     padding: 40px 24px;
     display: flex;
     gap: 8px;
     flex-direction: column;
-    margin-top: -200px;
+    position: relative;
+    top: -100px;
 }
 .text{
     display: flex;
@@ -77,6 +97,7 @@ img{
 
 /* service */
 .services_wrap, .services{
+    
     padding: 0 12px;
     display: flex;
     flex-direction: column;
@@ -85,8 +106,8 @@ img{
 
 .services_wrap h2{
     font-size: 48px;
-    text-align: center;
-    margin-top: 64px;
+    text-align: start;
+    margin: 80px 312px 32px;
 }
 .services img{
     min-width: 351px;
@@ -150,4 +171,31 @@ img{
 .hashtag{
     font-size: 24px;
     color: #0027D5;
+}
+@media (max-width: 1024px){
+    .banner_log p:first-of-type{
+        font-size: 50px;
+    }
+    div.intro_text{
+        background-color: #fff;
+        width: 100%;
+        margin: 0;;
+        padding: 40px 24px;
+        display: flex;
+        gap: 8px;
+        flex-direction: column;
+    }
+    .services_wrap h2{
+        text-align: center;
+        margin: 64px auto 32px;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner{
+        display: block;
+    }
+    .banner_img{
+        width: 100%;
+    }
 }
