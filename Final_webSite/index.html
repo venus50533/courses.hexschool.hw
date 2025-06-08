@@ -5,14 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>首頁</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">    
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&family=Noto+Sans+TC:wght@500&family=Permanent+Marker&family=ZCOOL+QingKe+HuangYou&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=podcasts" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=podcasts" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=check_box" />
+    <!-- slick -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <!-- index -->
+    <link rel="stylesheet" href="css/index.css">
+
 <body>
     <div class="container">
         <div class="header">
@@ -32,7 +40,7 @@
                     </div>
                 </div>
             </div>
-        </div>   
+        </div>
         <div class="intro_text">
             <div class="text">
                 <p>嗨，我是 Alyse</p>
@@ -48,58 +56,58 @@
             </div>
         </div>
         <div class="services_wrap">
-            <h2>專業服務與方案</h2>
-            <ul class="services">
-                <li class="card">
+            <div class="services">
+                <h2>專業服務與方案</h2>
+                <div class="card">
                     <img src="./img/desktop/index/index_ul_1.jpg" alt="">
                     <div class="card_body">
-                        <div class="cb_line"></div>
+                        <div class="div_line"><span class="span_line"></span></div>
                         <div class="cb_text">
                             <h3>履歷健檢</h3>
                             <p>履歷是打開機會之門的第一步。讓我協助你突顯專業技術與核心能力，並透過簡短模擬面試為你加分，讓面試官第一眼就被你吸引。</p>
                         </div>
                     </div>
-                </li>
-                <li class="card">
+                </div>
+                <div class="card">
                     <img src="./img/desktop/index/index_ul_2.jpg" alt="">
                     <div class="card_body">
-                        <div class="cb_line"></div>
+                        <div class="div_line"><span class="span_line"></span></div>
                         <div class="cb_text">
                             <h3>線上諮詢</h3>
                             <p>想快速解決前端學習瓶頸，或需要專業職涯指引？透過線上一對一諮詢，我將協助你更有方向地邁進。</p>
                         </div>
                     </div>
-                </li>
-                <li class="card">
+                </div>
+                <div class="card">
                     <img src="./img/desktop/index/index_ul_3.jpg" alt="">
                     <div class="card_body">
-                        <div class="cb_line"></div>
+                        <div class="div_line"><span class="span_line"></span></div>
                         <div class="cb_text">
                             <h3>網頁開發</h3>
                             <p>想打造高效能、具美感的網站？我提供從需求訪談到架構實作的一站式服務，讓你的品牌與產品在線上脫穎而出。</p>
                         </div>
                     </div>
-                </li>
-                <li class="card">
+                </div>
+                <div class="card">
                     <img src="./img/desktop/index/index_ul_4.jpg" alt="">
                     <div class="card_body">
-                        <div class="cb_line"></div>
+                        <div class="div_line"><span class="span_line"></span></div>
                         <div class="cb_text">
                             <h3>企業內訓</h3>
                             <p>想讓團隊快速掌握前端最新技術或優化現有專案流程？我可協助打造專業、實用的企業內訓課程，一次解決團隊痛點。</p>
                         </div>
                     </div>
-                </li>
-            </ul>
-            <div claa="serv_connect">
-                <p class="serv_connect_p">聯繫我，取得更多資訊！</p>
-                <div class="serv_connect_btn"><span>→</span></div>
+                </div>
+                <div class="serv_connect">
+                    <p class="serv_connect_p">聯繫我，取得更多資訊！</p>
+                    <div class="serv_connect_btn"><span>→</span></div>
+                </div>
             </div>
         </div>
         <div class="blog_wrap">
-            <h2>部落格精選</h2>
-            <ul class="blog">
-                <li class="card">
+            <h2 class="wrap_slogn">部落格精選</h2>
+            <div class="blog">
+                <div class="blog_card">
                     <img src="img/desktop/blog/photo4.png" alt="入門基礎">
                     <div class="card_content">
                         <time class="date">2024/10/11</time>
@@ -108,9 +116,9 @@
                         <p class="card_text">你是否對 React 感到好奇，卻苦惱於該如何正式啟動學習之路？身為前端工程師兼職涯諮詢師，我常遇到同學問我：「React
                             到底該怎麼入門？」為了幫大家減少摸索的時間，我整理出三個循序漸進的關鍵步驟，帶你更輕鬆地掌握 React 核心概念，真正把理論應用在實際專案中。</p>
                     </div>
-                    <a href="#" class="link">閱讀內文</a>
-                </li>
-                <li class="card">
+                    <a class="blog_a" href="#" class="link">閱讀內文</a>
+                </div>
+                <div class="blog_card">
                     <img src="img/desktop/blog/photo1.png" alt="作品集">
                     <div class="card_content">
                         <p class="date">2024/09/07</p>
@@ -120,9 +128,9 @@
                             對正在求職的前端工程師而言，作品集往往是第一個「說話」的利器。當面試官瀏覽你的網頁作品時，能夠快速了解你的程式邏輯、設計感以及解決問題的思路。我在協助多位同學優化履歷與作品集的過程中，總結出一些關鍵要素，分享給正在打造、升級作品集的你。
                         </p>
                     </div>
-                    <a href="#" class="link">閱讀內文</a>
-                </li>
-                <li class="card">
+                    <a class="blog_a" href="#" class="link">閱讀內文</a>
+                </div>
+                <div class="blog_card">
                     <img src="img/desktop/blog/photo2.png" alt="視覺體驗">
                     <div class="card_content">
                         <p class="date">2024/09/03</p>
@@ -132,12 +140,116 @@
                             在瀏覽器畫面上實現各種精美介面，一直是前端開發充滿成就感的部分。但當面臨複雜的佈局需求或是響應式設計時，往往讓人抓破頭皮。這篇文章想跟大家分享我在實務專案中累積的三大技巧，幫助你更有效率地駕馭
                             CSS，打造兼具美感與功能性的網頁。</p>
                     </div>
-                    <a href="#" class="link">閱讀內文</a>
-                </li>
-
-            </ul>
+                    <a class="blog_a" href="#" class="link">閱讀內文</a>
+                </div>
+            </div>
         </div>
-    </div>   
+        <div class="project">
+            <h2 class="project_h2">職涯諮詢成功案例</h2>
+            <div class="project_img_wrap">
+                <div class="project_img"><img src="./img/desktop/index/index_project.jpg" alt="成功案例"></div>
+                <div class="project_text">
+                    <div class="project_textA">
+                        <div class="div_line"><span class="span_line"></span></div>
+                        <div class="cb_text">
+                            <p>在職涯發展的關鍵轉折點上，適時的協助與正確的方向至關重要。藉由職涯諮詢，我可以幫助你加速釐清目標、建立更全面的技術與軟實力，並有效突破原有的舒適圈。</p>
+                        </div>
+                    </div>
+                    <div class="project_textB">
+                        <div class="div_line"><span class="span_line"></span></div>
+                        <div class="cb_text">
+                            <p>期待在下一個新機會中，我能與你一起攜手邁向更高峰！</p>
+                        </div>
+                        <a class="project_a" href="#" class="link">立即預約諮詢</a>
+                    </div>
+                </div>
+            </div>
+            <div class="interview">
+                <div class="interview_card">
+                    <img src="https://fakeimg.pl/300/" alt="假圖產生器">
+                    <div class="interview_card_text">
+                        <h5>無經驗到前端工程師 Offer</h5>
+                        <p>打造前端專案與履歷亮點</p>
+                        <p>深度強化面試表現</p>
+                    </div>
+                    <div class="inter_line"></div>
+                </div>
+                <div class="interview_card">
+                    <img src="https://fakeimg.pl/300/" alt="假圖產生器">
+                    <div class="interview_card_text">
+                        <h5>轉職迷茫到明確學習規劃</h5>
+                        <p>制訂階段性目標與時間安排</p>
+                        <p>鼓勵參與前端社群或活動</p>
+                    </div>
+                    <div class="inter_line"></div>
+                </div>
+                <div class="interview_card">
+                    <img src="https://fakeimg.pl/300/" alt="假圖產生器">
+                    <div class="interview_card_text">
+                        <h5>面試緊張到從容應對</h5>
+                        <p>透過面試模擬找出常犯的邏輯漏洞</p>
+                        <p>討論遇到不熟悉議題時的回應方式</p>
+                        <div class="inter_line"></div>
+                    </div>
+                    <div class="inter_line"></div>
+                </div>
+                <div class="interview_card">
+                    <img src="https://fakeimg.pl/300/" alt="假圖產生器">
+                    <div class="interview_card_text">
+                        <h5>面試緊張到從容應對</h5>
+                        <p>擬定進階框架或技術研究目標</p>
+                        <p>培養跨團隊溝通與簡報能力</p>
+                    </div>
+                    <div class="inter_line"></div>
+                    <!-- <div class="check-item">
+                        <i class="bi bi-check-square-fill"></i> 打造前端專案與履歷亮點
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <section class="contact-section">
+            <h2>與我聯繫</h2>
+            <ul class="contact-list">
+                <li class="contact-email">alysewang@hexschool.com<span>合作洽談</span></li>
+                <li><i class="bi bi-youtube"></i> Youtube 職涯諮詢室 <span>→</span></li>
+                <li><i class="bi bi-mic"></i> podcast 職涯諮詢室 <span>→</span></li>
+                <li><i class="bi bi-facebook"></i> Facebook 前端社群 <span>→</span></li>
+                <li><i class="bi bi-linkedin"></i> linkedin 職涯交流 <span>→</span></li>
+                <li><i class="bi bi-instagram"></i> Instagram 日常分享 <span>→</span></li>
+            </ul>
+        </section>
+
+    </div>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- slick -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.blog').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                arrows: true,
+                infinite: true,
+                speed: 500,
+                prevArrow: '<button type="button" class="slick-prev"><div class="arrow-circle">&#8592;</div></button>',
+                nextArrow: '<button type="button" class="slick-next"><div class="arrow-circle">&#8594;</div></button>',
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: { slidesToShow: 2 }
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: { slidesToShow: 1 }
+                    }
+                ]
+            });
+        });
+    </script>
 </body>
 
 </html>
